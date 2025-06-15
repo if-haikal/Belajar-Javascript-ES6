@@ -1,0 +1,15 @@
+Fetching
+Open Api
+DOM
+Props
+Skeleton Loader
+Map
+ES6s
+Spread Operator
+
+
+
+Function
+Ternary
+Arrow Function
+Object / Array
