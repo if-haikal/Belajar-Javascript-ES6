@@ -3,8 +3,8 @@ Open Api
 DOM
 Props
 Skeleton Loader
-ES6s
-Spread Operator
+
+
 
 
 
@@ -13,3 +13,7 @@ Ternary
 Arrow Function
 Object / Array
 Map
+Filter
+ES6s
+Destructuring
+JSON
