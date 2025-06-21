@@ -1,8 +1,5 @@
-Fetching
-Open Api
-DOM
 Props
-Skeleton Loader
+
 
 
 
@@ -17,3 +14,7 @@ Filter
 ES6s
 Destructuring
 JSON
+Fetching
+Open Api
+DOM
+Skeleton Loader
