@@ -54,22 +54,31 @@ const endpoint = "https://fakestoreapi.com/products";
 
 
 const containerDisplay = document.getElementById("card-display");
+const SkeletonLoader = document.getElementById("skeleton-loader");
+const pTitle = document.querySelector('p');
 const fetchData = async () => {
     try {
         const api = await fetch(endpoint);
+        const data = await api.json();
 
         // cek response dari API
         if (!api.ok) {
             throw new Error("API tidak merespon dengan baik");
         }
 
-        const data = await api.json();
-
         // Cek apakah terdapat data dan ada element pertama
         if (data.length === 0 || !data[0]) {
             containerDisplay.innerHTML = "<p>Ga ada data</p>"
             return
         }
+
+        // Hapus Skeleton Loader
+        setTimeout(() => {
+            pTitle.classList.add("hidden");
+            SkeletonLoader.classList.add("hidden");
+        }, 8000);
+        containerDisplay.classList.remove("hidden");
+
 
         // Tampilkan data pada containerDisplay
         data.forEach(({category, title, price, image}) => {
